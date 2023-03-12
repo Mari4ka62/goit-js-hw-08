@@ -12,8 +12,11 @@ const formData = {};
 function onFormInput(e) {
     formData.email = email.value;
     formData.message = message.value;
+    console.log(formData);
+
+    localStorage.setItem("feedback-form-state", JSON.stringify(formData));
 }
-console.log(formData);
+
 function onFormSubmit(e) {
     
 }
