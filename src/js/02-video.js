@@ -15,16 +15,4 @@ function onTimeUpdate(data) {
 const objectData = JSON.parse(localStorage.getItem('videoplayer-current-time'));
  
 player.setCurrentTime(objectData.seconds);
- 
- // player.on('play', function () {
-//         console.log('played the video!');
-//     });
-
-//     player.getVideoTitle().then(function(title) {
-//         console.log('title:', title);
-//     });
-//     const onPlay = function(data) {
-     
-// };
-
-// player.on('play', onPlay);
+  
