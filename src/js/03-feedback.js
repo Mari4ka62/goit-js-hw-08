@@ -30,7 +30,7 @@ function reloadForm(event){
     const savedData = JSON.parse(localStorage.getItem(STORAGE_KEY));
     if(savedData){
         input.value = savedData.email;
-        input.value = savedData.message;
+        textarea.value = savedData.message;
     }
 }
 
