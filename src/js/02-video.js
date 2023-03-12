@@ -11,8 +11,11 @@ function onTimeUpdate(data) {
     return localStorage.setItem('videoplayer-current-time',
     JSON.stringify(data))
 }
-  
-const objectData = JSON.parse(localStorage.getItem('videoplayer-current-time'));
+
+function currentTime() {
+    const objectData = JSON.parse(localStorage.getItem('videoplayer-current-time'));
+    if (objectData) {
+       player.setCurrentTime(objectData.seconds); 
+    }
+}
  
-player.setCurrentTime(objectData.seconds);
-  
